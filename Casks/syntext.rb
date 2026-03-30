@@ -2,8 +2,8 @@ cask "syntext" do
   arch arm: "arm64", intel: "x86_64"
 
   version "1.0.0"
-  sha256 arm:   "abd83d7fcee221f2c4a1b10d6164309f3f2350c0c74684198849b5333656237f",
-         intel: "68971e6e49a649e94f2cdc9a989ca9da5168c0df8bdd27d6fc92db31c791c744"
+  sha256 arm:   "0780d05b62c37e874f33eec208f50341f67c8fb2d13fb2902eabf5392049289b",
+         intel: "21c435ecf7b3a441ef94d015e73020d0231ad9de61df9d229deb0e3ac33f775f"
 
   url "https://github.com/whit3rabbit/syntext/releases/download/v#{version}/st-#{version}-macos-#{arch}.zip"
   name "syntext"
