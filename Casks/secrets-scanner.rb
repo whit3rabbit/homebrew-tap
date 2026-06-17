@@ -1,9 +1,9 @@
 cask "secrets-scanner" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.2.0"
-  sha256 arm:   "2fcaae7fecbd90fd62541ee16980b7a7017b8082a8b8039cf493d206d6e45cdd",
-         intel: "f26cd039a7e560a355c060890e9e6073292142ee47b3cd5f60a41ab656660e22"
+  version "0.2.1"
+  sha256 arm:   "bc60598719b3c2219de7ca5d5d192d6ae7436f8c85bc72cb7044ed062908c251",
+         intel: "3383f7cd28bf2c4643fa1fb8b80418a1695bc1b09f0b6a30b48db60d303a5be8"
 
   url "https://github.com/whit3rabbit/secrets-scanner/releases/download/v#{version}/secrets-scanner-#{version}-macos-#{arch}.zip"
   name "secrets-scanner"
