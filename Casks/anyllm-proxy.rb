@@ -1,9 +1,9 @@
 cask "anyllm-proxy" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.9.0"
-  sha256 arm:   "e3e94869274ea353e3fe7e43f7ae66c3c7cd169463e6e6d1700f0fb40a598067",
-         intel: "68eec3b0a617fddac38c6ae124b8f1260630bbb6d07a5f7d07f4fccc19d5fa42"
+  version "0.12.0"
+  sha256 arm:   "1e29fd886ea20bc64447560c49f4146cb591b4006e2dfdb80b7f8aaac82a6857",
+         intel: "fb969e4e8de23fc8050e328f405e4ff5ec571332bc8040f56d83a19c7a285c9b"
 
   url "https://github.com/whit3rabbit/anyllm-proxy/releases/download/v#{version}/anyllm-proxy-#{version}-macos-#{arch}.tar.gz"
   name "anyllm-proxy"
