@@ -1,9 +1,9 @@
 cask "synrepo" do
   arch arm: "arm64", intel: "x86_64"
 
-  version "0.1.5"
-  sha256 arm:   "889109fb963ad2ee61f39fda8c63cd515391ac98f866483ad0b7653110947000",
-         intel: "f91b63c92e31c49a6cfc2524a00b81f052cc54a2743562dbb62db9b70ff62815"
+  version "0.2.0"
+  sha256 arm:   "cf0efb07b8240b13d7a0c9923e33ab8ae2d04000b3c49f61444b7861ae232407",
+         intel: "626cbbd3f926ae6d8eadd615252c70f543ad81ba23701d5bb2b5c0053955a22c"
 
   url "https://github.com/whit3rabbit/synrepo/releases/download/v#{version}/synrepo-#{version}-macos-#{arch}.zip"
   name "synrepo"
