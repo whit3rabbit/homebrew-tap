@@ -1,6 +1,6 @@
 cask "turbospark" do
-  version "0.3.0"
-  sha256 "c0f76f2ba3a059b0cba108425bbe9956076fa61ca8c0d32e6555c63088f5c396"
+  version "0.3.1"
+  sha256 "82d6745ff59f4f3539cfbf32bfd5fdb0401c356bd45810096b30869892e84803"
 
   url "https://github.com/whit3rabbit/turbospark/releases/download/v#{version}/TurboSpark-#{version}-arm64.dmg"
   name "TurboSpark"
@@ -15,7 +15,7 @@ cask "turbospark" do
   auto_updates true
 
   depends_on arch: :arm64
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   conflicts_with cask: "whit3rabbit/tap/turbospark-cli"
 
