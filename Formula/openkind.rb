@@ -6,23 +6,23 @@ require "json"
 class Openkind < Formula
   desc "Independent Rust decision-inference engine that speaks the Jev protocol"
   homepage "https://github.com/whit3rabbit/openkind"
-  version "0.3.0"
+  version "0.4.0"
   license "MIT"
 
   on_macos do
     on_arm do
       url "https://github.com/whit3rabbit/openkind/releases/download/v#{version}/openkind-#{version}-aarch64-apple-darwin.tar.gz"
-      sha256 "78048955ff79e4eb2cc0a7435417a171deb08212ac3a881e0f7891e70e5b6f5b"
+      sha256 "fe2f8876aacd1ee2e37bd6dc30bc3bcf0ab18739d96282b5dc5173cb2fbe28b5"
     end
     on_intel do
       url "https://github.com/whit3rabbit/openkind/releases/download/v#{version}/openkind-#{version}-x86_64-apple-darwin.tar.gz"
-      sha256 "9ea701d0146e9de8f1730764143f3be007b906c636ea9a81b8593c7cc0b020f3"
+      sha256 "5ee793c9fcda8b48c0777aa9022fe66567ee87bea55e7c544f0634a1e4b097fe"
     end
   end
 
   on_linux do
     url "https://github.com/whit3rabbit/openkind/releases/download/v#{version}/openkind-#{version}-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "dfa881684ea972a42ca867b026d65e72e503bdfdc7d4f15296e1765af472aa02"
+    sha256 "22c33cbd15542909b1b4b2bde0b5e727c298d5b2c0ebefdee5e5cadc97276308"
   end
 
   def install
