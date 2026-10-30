@@ -1,6 +1,6 @@
 cask "turbospark" do
-  version "0.6.0"
-  sha256 "4115bc7ad3f40cb6b4225697e4df7d15f863db39d90e374bfe94f70ad28c5c80"
+  version "0.6.5"
+  sha256 "d3340e0c176b4028854bd91742a21e14bebdd1a090f6ffbac56b5ac43708104a"
 
   url "https://github.com/whit3rabbit/turbospark/releases/download/v#{version}/TurboSpark-#{version}-arm64.dmg"
   name "TurboSpark"
@@ -9,7 +9,7 @@ cask "turbospark" do
 
   # The app updates itself through Sparkle (the release's signed
   # appcast), replacing the bundle in place. Without this stanza
-  # brew would keep offering  for versions the app
+  # brew would keep offering `brew upgrade` for versions the app
   # already installed, and an upgrade would fight the updater over
   # the same /Applications path.
   auto_updates true
@@ -21,8 +21,10 @@ cask "turbospark" do
 
   app "TurboSpark.app"
 
-  # The four CLI binaries (the `turbospark` front end plus the three
-  # tools) ship inside the bundle; make-app-bundle.sh signs them.
+  # The CLI binaries (the `turbospark` front end plus the tools
+  # it hands work to) ship inside the bundle; make-app-bundle.sh
+  # signs them. Each is linked: the front end finds a sibling next to
+  # its own path, which under Homebrew is the bin directory.
   # Linking them from there rather than shipping a second copy is what lets one cask
   # cover both, and it means `brew uninstall` removes the app and
   # unlinks the commands in one step.
@@ -30,6 +32,11 @@ cask "turbospark" do
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-check"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-model"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-server"
+  binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-image"
+  binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-music"
+  binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-clone"
+  binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-speak"
+  binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-ocr"
 
   # Only runs under `brew uninstall --zap`. Deliberately does NOT
   # list ~/.turbospark: that is where multi-gigabyte model installs
