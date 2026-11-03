@@ -1,6 +1,6 @@
 cask "turbospark" do
-  version "0.6.5"
-  sha256 "d3340e0c176b4028854bd91742a21e14bebdd1a090f6ffbac56b5ac43708104a"
+  version "0.7.0"
+  sha256 "8ac0c992c52aaac490d15e7120da1ba80eb47797c775878712f3760ff0fc5447"
 
   url "https://github.com/whit3rabbit/turbospark/releases/download/v#{version}/TurboSpark-#{version}-arm64.dmg"
   name "TurboSpark"
@@ -36,6 +36,7 @@ cask "turbospark" do
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-music"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-clone"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-speak"
+  binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-steer"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-ocr"
 
   # Only runs under `brew uninstall --zap`. Deliberately does NOT
