@@ -1,6 +1,6 @@
 cask "turbospark-cli" do
-  version "0.7.0"
-  sha256 "e7de4749fbe99073f9a17c54dfd112b2c0ae4cef32c1f520cd27f8b22256a6f1"
+  version "0.7.1"
+  sha256 "c26ef685ff386b29a62afb1fba8d94835e60af1e23469d6d1e472768bacfe140"
 
   url "https://github.com/whit3rabbit/turbospark/releases/download/v#{version}/turbospark-#{version}-macos-arm64.zip"
   name "turbospark command-line tools"
