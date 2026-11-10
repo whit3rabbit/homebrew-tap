@@ -1,6 +1,6 @@
 cask "turbospark" do
-  version "0.7.1"
-  sha256 "e66f86b2d2d990ae03835ef13a4c58c841e19e92113b3b47b8fb1adbe5fcca3e"
+  version "0.8.0"
+  sha256 "16b14effa55f99b8ddd612872f5544052c97141f9053d874af73772b5a7185f4"
 
   url "https://github.com/whit3rabbit/turbospark/releases/download/v#{version}/TurboSpark-#{version}-arm64.dmg"
   name "TurboSpark"
