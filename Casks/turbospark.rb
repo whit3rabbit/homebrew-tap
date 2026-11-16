@@ -1,6 +1,6 @@
 cask "turbospark" do
-  version "0.8.0"
-  sha256 "16b14effa55f99b8ddd612872f5544052c97141f9053d874af73772b5a7185f4"
+  version "0.9.0"
+  sha256 "56b2c8abee20e34cc003de6ba389b7debae56982743d02c2468d14400c392e36"
 
   url "https://github.com/whit3rabbit/turbospark/releases/download/v#{version}/TurboSpark-#{version}-arm64.dmg"
   name "TurboSpark"
@@ -38,6 +38,7 @@ cask "turbospark" do
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-speak"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-steer"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-ocr"
+  binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-acp-agent"
 
   # Only runs under `brew uninstall --zap`. Deliberately does NOT
   # list ~/.turbospark: that is where multi-gigabyte model installs
