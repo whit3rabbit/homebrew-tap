@@ -1,6 +1,6 @@
 cask "turbospark" do
-  version "0.9.0"
-  sha256 "56b2c8abee20e34cc003de6ba389b7debae56982743d02c2468d14400c392e36"
+  version "0.10.0"
+  sha256 "9e353dbf6295819d602f15db1768031fe9bb7ecc009202043fb333038da552de"
 
   url "https://github.com/whit3rabbit/turbospark/releases/download/v#{version}/TurboSpark-#{version}-arm64.dmg"
   name "TurboSpark"
@@ -36,6 +36,7 @@ cask "turbospark" do
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-music"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-clone"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-speak"
+  binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-enhance"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-steer"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-ocr"
   binary "#{appdir}/TurboSpark.app/Contents/MacOS/turbospark-acp-agent"

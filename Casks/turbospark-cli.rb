@@ -1,6 +1,6 @@
 cask "turbospark-cli" do
-  version "0.9.0"
-  sha256 "ef60c69619d7385d41736b1233d98888b21729c0bee873daf43ff3828daa004f"
+  version "0.10.0"
+  sha256 "3f60d01cec797f1ac1cc2fe8866c3bf897651ec219daeaedfb4c7fe626a81dc0"
 
   url "https://github.com/whit3rabbit/turbospark/releases/download/v#{version}/turbospark-#{version}-macos-arm64.zip"
   name "turbospark command-line tools"
@@ -20,6 +20,7 @@ cask "turbospark-cli" do
   binary "turbospark-music"
   binary "turbospark-clone"
   binary "turbospark-speak"
+  binary "turbospark-enhance"
   binary "turbospark-steer"
   binary "turbospark-ocr"
   binary "turbospark-acp-agent"
